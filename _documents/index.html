@@ -1,0 +1,709 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>TIGER Mobile Web Theme - Create your mobile website</title>
+	
+	<meta name="description" content="This documentation was made only with the Documenter (except the images)">
+	<meta name="author" content="Abdulkadir Atasoglu">
+	<meta name="copyright" content="Abdulkadir Atasoglu">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-05-09T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/custom.css" media="screen">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/jquery.1.6.4.js"></script>
+<script src="js/cufon.js"></script>
+<script src="js/font.js"></script>
+<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/shCore.js"></script>
+<script src="js/shBrushAS3.js"></script>
+<script src="js/shBrushCss.js"></script>
+<script src="js/shBrushXml.js"></script>
+<script src="js/shBrushJScript.js"></script>
+<script src="js/shBrushPhp.js"></script>
+<script src="js/shBrushPlain.js"></script>
+<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+<script>document.createElement('section');var duration=450,easing='easeOutExpo';</script>
+<script src="js/script.js"></script>
+<style>
+		html{background-color:#F3F3F3;color:#585858;background-image:url(assets/images/image_16.png);background-repeat:repeat;background-attachment:fixed;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_17.png);}
+		a{color:#111111;}
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#333333;color:#F1F1F1;background-image:url(assets/images/image_18.gif);background-repeat:repeat-y;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #444444;-moz-text-shadow:1px 1px 0px #444444;text-shadow:1px 1px 0px #444444;}
+		#documenter_sidebar ol{border-top:1px solid #222222;}
+		#documenter_sidebar ol a{border-top:1px solid #444444;border-bottom:1px solid #222222;color:#F1F1F1;}
+		#documenter_sidebar ol a:hover{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_sidebar ol a.current{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+</head>
+<body><div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Information</a></li>
+			<li><a href="#htmlstructure">HTML Structure</a></li>
+            <li><a href="#mainmenu">Main Menu & Socials</a></li>
+            <li><a href="#collapsed">Toggle / Collapsed</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#cssstructure">CSS Structure</a></li>
+            <li><a href="#hexagon">Theme Color Info</a></li>
+            <li><a href="#slider">Home Page Slider</a></li>
+            <li><a href="#maps">Google Fonts</a></li>
+			<li><a href="#lists">List Types</a></li>
+			<li><a href="#gallery">Gallery &amp; Portfolio</a></li>
+            <li><a href="#navbarm">Footer Navbar</a></li>
+            <li><a href="#linkp">Link Pages</a></li>
+            <li><a href="#addhome">Add Home Bubble</a></li>
+            <li><a href="#splashscreen">Splash Screen</a></li>
+            <li><a href="#twitter">Twitter Plugin</a></li>
+            <li><a href="#integrate">Integrate with Site</a></li>
+            <li><a href="#mdetect">Mobile Detect</a></li>
+            <li><a href="#changelog">Change Log</a></li>
+			<li><a href="#source_credits">Source & Credits</a></li>
+
+
+		</ol>
+		<div id="documenter_copyright">Copyright Abdulkadir Atasoglu 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+	  </div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover">
+  <h1>TIGER Mobile Web Theme</h1>
+  <h2>Create your mobile website with TIGER</h2><hr><ul>
+      <li>Created: 13/09//2012
+      </li><li></li>
+      <li>By: Webbu</li>
+      <li><a href="http://themeforest.net/user/Webbu" target="_blank">http://themeforest.net/user/Webbu</a></li>
+      <li>Email: <a href="mailto:kadir@webbu.com">kadir&#64;&#119;&#101;&#98;&#98;&#117;&#46;&#99;&#111;&#109;</a></li></ul><p>This documentation was made only with <a href="http://rxa.li/documenter">the Documenter</a> (except the images)
+</p>
+
+<h3>How to disable tocuh swipe function without disable Menu ? </h3>
+<p> You can disable touch swipe function without disable menu on <strong>assets > js > custom.js </strong> Find code below and delete that.;
+<pre class="brush: js">
+// Delete Code below for stop swipe left & right function.
+		
+// Swipe left function for menu. If you want you can disable swipe left funtion delete code below.
+$('#menu, .pages').live("swipeleft", function(){
+    if (menuStatus){	
+    $(".ui-page-active").animate({
+        marginLeft: "0px",
+      }, 0, function(){menuStatus = false});
+      }
+});
+// Swipe left end
+
+
+// Swipe right function for menu. If you want you can disable swipe right funtion delete code below.
+$('.pages').live("swiperight", function(){
+    if (!menuStatus){	
+    $(".ui-page-active").animate({
+        marginLeft: "165px",
+      }, 0, function(){menuStatus = true});
+      }
+});
+// Swipe right end
+
+//End Delete Code
+
+</pre>
+</section>
+      
+<section id="htmlstructure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>
+	The interior pages in this theme are setup 2 Main section; 1-) Menu / 2-) Sub Pages ( You can see code below)</p>
+    <p>Per page i used page seperators. And i want to explain you page linking. You will find this code <pre class="brush: html"><div data-role="page" class="pages" id="home" data-theme="a"></pre> after every page seperators. On this line <strong>id="home"</strong> section is mean this page is home page and while you are linking this page you have to use link like this:<pre class="brush: html"><h ref="home">Home Page</a></pre></p>
+<pre class="brush: html">
+...
+<body>
+<!-- Menu Begin -->
+<div id="menu">
+        
+    <!-- Social Links -->
+    <div class="social-links">
+        ...
+    </div>
+    <!-- / Social Links -->
+    <div class="hr-full-black"></div>
+
+    <ul>
+        ...
+   </ul>
+    
+    
+</div>
+<!-- /Menu -->
+
+<!-- *********************************************************
+ HOME PAGE BEGIN ( Page seperator )
+********************************************************* -->
+<div data-role="page" class="pages" id="home" data-theme="a">
+    
+    <!-- Header Begin -->
+    <div data-role="header" class="header" data-theme="a">
+    <a href="#" class="showMenu menuBtn">Menu</a>
+    <div class="logo">&nbsp;</div>
+    </div>
+    <!-- /header -->
+    
+    <!-- Content Begin -->
+    <div data-role="content">
+        
+        <!-- Your content here -->
+
+    </div>
+    <!-- /content -->
+</div>
+<!-- *********************************************************
+ HOME PAGE END( Page seperator )
+********************************************************* -->
+
+<!-- Other Pages -->
+
+
+<!-- Javascripts -->
+</body>
+</pre>
+</section>
+<section id="mainmenu">
+<h3>Main Menu</h3><hr class="notop">
+<p>You can add or delete links on main menu. Can see sample menu code below; ( This menu is on Home Page top side)</strong></p>
+<pre class="brush: html">
+<ul>
+            	
+    <li><a href="#home" class="contentLink" data-transition="fade">Home Page <span class="icon"></span></a></li>
+    <li><a href="#aboutus" class="contentLink" data-transition="pop">About Us<span class="icon"></span></a></li>
+    <li><a href="#services" class="contentLink" data-transition="flip">Services<span class="icon"></span></a></li>
+    <li><a href="#blog" class="contentLink" data-transition="fade">Blog<span class="icon"></span></a></li>
+    <li><a href="#products" class="contentLink" data-transition="fade">Products<span class="icon"></span></a></li>
+    <li><a href="#" class="contentLink" data-transition="flip"><span class="icon"></span></a></li>
+    <li><a href="#portfolio" class="contentLink" data-transition="slideup">Portfolio<span class="icon"></span></a></li>
+    <li><a href="#twitter" class="contentLink" data-transition="slide">Twitter<span class="icon"></span></a></li>
+    <li><a href="#contact" class="contentLink" data-transition="slideup">Contact<span class="icon"></span></a></li>
+
+</ul>
+</pre>
+<p>And also you will see <strong>data-transition="fade"</strong> tags on menu. This tags will be help transition effect. You can use "fade", "flip", "pop", "slide", "slidown" on this tag. I used all of them for sample to you.</p>
+
+<h3> Social Links </h3>
+<p>You have to change on top of the Home Page social links code below;</p>
+<pre class="brush: html">
+<!-- Social Links -->
+<div class="social-links">
+    <p><a class="twitter" href="#"></a></p>
+    <p><a class="rss" href="#"></a></p>
+    <p><a class="facebook" href="#"></a></p>
+    <p><a class="googleplus" href="#"></a></p>
+    <p><a class="linkedin" href="#"></a></p>
+</div>
+<!-- / Social Links -->
+</pre>
+</section>
+<section id="collapsed">
+	<h3>Toggle / Collapsed</h3><hr class="notop">
+<p>You can use jQuery Mobile Collapsed windows feature like bottom of the main page and like code below;</strong></p>
+<pre class="brush: html">
+<!-- Collapsed Area -->
+<div data-role="collapsible-set">
+    <div data-role="collapsible" data-collapsed="false">
+        <h3>Title</h3>
+        <p>Content</p>
+    </div>
+    
+    
+    <div data-role="collapsible" data-collapsed="true">
+    
+        <h3>Title</h3>
+        <p>Content</p>
+    
+    </div>
+    
+    
+    <div data-role="collapsible" data-collapsed="true">
+    
+        <h3>Title</h3>
+        <p>Content</p>
+          
+    </div>
+    
+</div>
+<!-- / Collapsed Area --> 
+</pre>
+<p> You can use <strong>data-collapsed="false"</strong> or true tag on this area like code up. And your wollabsed windows will be opened or closed.
+</section>
+
+<section id="buttons">
+	<h3>Buttons</h3><hr class="notop">
+<p>Buttons are 3 different size and 5 different colors. You can use buttons like code below and if you want to see more details about buttons using please have a check <strong>Portfolio > Portfolio Details Page</strong></p>
+<pre class="brush: html">
+<!-- Buttons -->
+
+<p>Sizes are small, medium and big.</p>
+<a href="#" class="small tiger">Button</a>
+<a href="#" class="medium tiger">Button</a>
+<a href="#" class="large tiger">Button</a>
+
+<p>Button have 5 different color and easy to use;</p>
+<a href="#" class="small green tiger">Color</a>
+<a href="#" class="small blue tiger">Color</a>
+<a href="#" class="small magenta tiger">Color</a>
+<a href="#" class="small orange tiger">Color</a>
+<a href="#" class="small yellow tiger">Color</a>
+
+
+<!-- Buttons -->
+</pre>
+</section>
+<section id="cssstructure">
+	<h3>CSS Structure</h3><hr class="notop">
+<p>
+	CSS structure is on like code below; ( on assets > css > style.css ; You will find more information on theme info section below.</p>
+<pre class="brush: css">
+/* 
+TIGER Mobile Theme v1
+CSS Document
+*/
+ 
+/* ----------------------- SUMMARY -----------------------
+ 
+- GOOGLE WEB FONT
+ 
+- RESET SETTINGS
+ 
+- GENERAL LAYOUT
+  - CLEAR FLOATED ELEMENTS
+  - MAIN LINK PROPERTIES
+   
+- LIST STYLES
+  - NUMBERED LIST
+  - START LIST
+  - CHECK LIST
+  - BULLET LIST
+ 
+- BUTTONS
+- TEXT AREA
+- HIGHLIGHT STYLES
+- IMAGES ALIGNMENT & STYLING
+- CUSTOM MESSAGE STYLING
+
+- SLIDER CONFIGURATION ( Into the assets>css>flexyslider.css )
+ 
+- TAB MENU
+ 
+- PHOTO SWIPE 
+ 
+- PORTFOLIO PAGE
+ 
+- PRODUCT PAGE
+
+- SUB PAGES PHOTO CONFIG
+ 
+- CONTENT & LOGO
+ 
+- SLIDE MENU STYLES
+
+- BLOG PAGE
+
+- TWITTER PAGE
+
+- CONTACT PAGE
+
+- SOCIAL LINKS
+   
+- UI ELEMENTS
+   
+*/
+</pre>
+</section>
+<section id="hexagon">
+<h3>Theme Color Information</h3><hr class="notop">
+<p>You can change theme very easy with just change this tag <strong>data-theme="a"</strong> this tag is inside the <strong>index.html</strong> on all page begins like code below;<pre class="brush: html"><div data-role="page" class="pages" id="aboutus" data-theme="a"></pre></p>
+<p>If you want to change this theme to different color just change <strong>data-theme="a"</strong> to <strong>data-theme="b"</strong> or c,d,e,f,g,j,i,k per code you will find different color and you can choose which color you want.</p>
+
+<p>
+And also you can find theme colors on <strong>assets > css > jquery.mobile.1.0.1.min.css</strong> and you can change it easily. On this css file just follow my theme seperators like code below;
+</p><pre class="brush: css">
+
+
+/*--------------------------------------------------
+THEME A
+---------------------------------------------------*/
+
+....
+
+/*--------------------------------------------------
+THEME B
+---------------------------------------------------*/
+.....
+</pre>
+
+</section>
+<section id="slider">
+<h3>Home Page Slider</h3><hr class="notop">
+<p> You can change slider transition effects on this section. And also youcan find example files on main menu HOME section &gt; <strong>index.html</strong>. The slider can be change horizontal or vertical and fade or slide effects. Example code is on slider page header section code below:<br>For Vertical Slide: You can change it<strong> "horizontal"</strong> or <strong>"vertical"</strong></p>
+<pre class="brush js">
+
+$(document).ready(function() {
+	$('.flexslider').flexslider({
+		slideDirection: "vertical",
+        start: function(slider){
+				$('.flexslider').css("max-height" , "574px");
+	  });
+});
+</pre>
+<p>For fade or sliding slide: You can chane if <strong>"fade"</strong> or <strong>"slide"</strong></p>
+<pre class="brush js">
+
+$(document).ready(function() {
+	$('.flexslider').flexslider({
+		slideDirection: "horizontal",
+		animation: "fade",
+        start: function(slider){
+				$('.flexslider').css("max-height" , "574px");
+	  });
+});
+</pre>
+<p> and also you can edit default parameter for Slider on <strong>assets&gt;js > jquery.flexslider.js</strong> codes below: 
+<pre class="brush js">
+//FlexSlider: Default Settings
+  $.flexslider.defaults = {
+    animation: "slide",              //String: Select your animation type, "fade" or "slide"
+    slideDirection: "horizontal",   //String: Select the sliding direction, "horizontal" or "vertical"
+    slideshow: true,                //Boolean: Animate slider automatically
+    slideshowSpeed: 6000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+    animationDuration: 600,         //Integer: Set the speed of animations, in milliseconds
+    directionNav: false,             //Boolean: Create navigation for previous/next navigation? (true/false)
+    controlNav: false,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+    keyboardNav: true,              //Boolean: Allow slider navigating via keyboard left/right keys
+    mousewheel: true,              //Boolean: Allow slider navigating via mousewheel
+    prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+    nextText: "Next",               //String: Set the text for the "next" directionNav item
+    pausePlay: false,               //Boolean: Create pause/play dynamic element
+    pauseText: 'Pause',             //String: Set the text for the "pause" pausePlay item
+    playText: 'Play',               //String: Set the text for the "play" pausePlay item
+    randomize: false,               //Boolean: Randomize slide order
+    slideToStart: 0,                //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+    animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+    pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+    pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+    controlsContainer: "",          //Selector: Declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.
+    manualControls: "",             //Selector: Declare custom control navigation. Example would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+    start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
+    before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
+    after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
+    end: function(){}               //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+  }
+</pre>
+</section>
+
+<section id="maps">
+<h3>Google Fonts</h3><hr class="notop">
+<p>For change Google Web Font use <strong>assets&gt;css > style.css</strong> code below:</p>
+<pre class="brush css">
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400, 600, 700); </pre>
+<p>And have to change font names on same css file GENERAL LAYOUT section<strong></strong>.</p>
+</section>
+
+
+<section id="lists">
+<h3>List Types</h3><hr class="notop">
+<p>Here is the list samples; (on main menu About Page )
+<pre class="brush: html">
+<!-- Star List -->
+<ul class="starlist">
+    <li>Star List</li>
+</ul>
+<!-- / Star List -->
+
+<!-- Check List -->
+<ul class="checklist">
+    <li>Check List</li>
+</ul>
+<!-- / Check List -->
+
+<!-- Bullet List -->
+<ul class="bulletlist">
+    <li>Bullet List</li>
+</ul>
+<!-- / Bullet List -->
+
+<!-- Numbered List -->
+<ol>
+    <li>Ordered List</li>
+</ol> 
+<!-- / Numbered List -->
+</pre>
+</section>
+
+<section id="gallery">
+<h3> Gallery &amp; Portfolio</h3><hr class="notop">
+<p>You can use 3 types listing on gallery portfolio and product page like code below;<strong></strong></p>
+
+<p>You can put your own images on <strong>gallery page</strong> like example code below.</p>
+<pre class="brush: html">
+
+ <!--  -->
+    <!-- Three Column Gallery -->         
+        <ul id="Gallery" class="gallery">
+            <li class="gallery-three"><a href="assets/images/Demo/Galleries/gallery-images/img1.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img1.jpg" alt="Caption"></a></li>
+            <li class="gallery-three"><a href="assets/images/Demo/Galleries/gallery-images/img2.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img2.jpg" alt="Caption"></a></li>
+            <li class="gallery-three"><a href="assets/images/Demo/Galleries/gallery-images/img3.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img3.jpg" alt="Caption"></a></li>
+        </ul>
+        <!-- /Three Column Gallery -->  
+        
+        <!-- Two Column Gallery -->         
+        <ul id="Gallery" class="gallery">
+            <li class="gallery-two"><a href="assets/images/Demo/Galleries/gallery-images/img4.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img4.jpg" alt="Image 001" /></a></li>
+            <li class="gallery-two"><a href="assets/images/Demo/Galleries/gallery-images/img5.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img5.jpg" alt="Image 001" /></a></li>
+        </ul>
+        <!-- /Two Column Gallery -->   
+        
+        <!-- One Column Gallery -->         
+        <ul id="Gallery" class="gallery">
+            <li class="gallery-one"><a href="assets/images/Demo/Galleries/gallery-images/img6.jpg" rel="external"><img src="assets/images/Demo/Galleries/gallery-images/img6.jpg" alt="Image 001" /></a></li>
+        </ul>
+        <!-- /One Column Gallery -->
+<!-- /  -->
+
+</pre>
+
+And also have to include this javascript code below to header section;
+
+<pre class="brush: js">
+<!--  Photo Swipe   -->
+<script src="assets/js/klass.min.js"></script>
+<script src="assets/js/code.photoswipe.jquery-3.0.4.min.js"></script>
+<link rel="stylesheet" href="assets/css/photoswipe.css">
+<!--  Photo Swipe  End -->
+
+<!--  Photo Swipe  Custom JS  -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		var myPhotoSwipe = $("# a").photoSwipe({ enableMouseWheel: false , enableKeyboard: false });
+	});
+</script>
+<!--  Photo Swipe  Custom JS End-->
+
+</pre>
+
+<p>Please have a look portfolio and product page for samples.</p>
+</section>
+
+<section id="navbarm">
+<h3>Navbar &amp; Main Icons</h3><hr class="notop">
+<h4>Navbar on Footer</h4>
+<p>if you want to use Sticky footer bar or header bar just add <strong>data-position="fixed"</strong> like code below.</p>
+<p>For use navbar on footer see example code below. ( You can find live example on product details page.)</p>
+<pre class="brush: html">
+<!-- If you want to use your mobile project copy / paste this (FOOTER) -->
+	<div data-role="footer" class="nav-glyphish" data-position="fixed">
+    	<div data-role="navbar" class="nav-glyphish" data-grid="c">
+		<p><a href="#" class="iconsub-white-Tags" data-icon="custom">Products</a></p>
+        <p><a href="mailto:email@somewhere.com" class="iconsub-white-Envelope" data-icon="custom">Email</a></p>
+        <p><a href="tel:00000000" class="iconsub-white-Phone" data-icon="custom">Contact</a></p>
+        <p><a href="#" class="iconsub-white-House" data-icon="custom">Home</a></p>
+		</div>
+	</div>
+<!-- end -->
+</pre>
+<p>You can use over 100 icons on  <strong>assets &gt; images > iconsets > gyliphish-white</strong>.<br>
+  It is very easy to customize icons. Just copy icon file name for example: <strong>assets &gt;</strong> <strong>images > iconsets > gyliphish-white > Action.png</strong><br>
+  The file name is <strong>Action</strong> and you can use this icon on footer nav bar like code below. <strong>Ex: class="iconsub-white-Action"</strong></p>
+<pre class="brush: html">&nbsp;
+</pre>
+</section>
+
+
+<section id="linkp">
+<h3>Link Pages</h3><hr class="notop">
+<p>Link structure a bit different from normal HTML web site. After you have a look theme you will see just index.html file on _codes folder. This file is our main file on this template and linking style is like below;</p>
+<p>Normal internal page link:
+<pre class="brush: html"> <a href="#pagename">Link Name </a></pre></p>
+<p>This type link will send you a page inside the index.html file. If you have a look inside of index.html you will see all pages seperated with comments.</p>
+<p>And you can find a lot of different style on this page styles. If you want to create new page inside the file just copy code below;</p>
+<pre class="brush: html">
+<!-- *********************************************************
+ SAMPLE PAGE BEGIN
+********************************************************* -->
+<div data-role="page" class="pages" id="pagename" data-theme="a">
+    
+    <!-- Header Begin ( This will put logo and menu button -->
+    <div data-role="header" class="header" data-theme="a">
+    <a href="#" class="showMenu menuBtn">Menu</a>
+    <div class="logo">&nbsp;</div>
+    <a href="#" class="showMenu menuBtn">Menu</a>
+    </div>
+    <!-- /header -->
+    
+    <!-- breadcrumb ( If you adding sub page you can use this ) -->
+    <ul class="breadcrumb">
+        <li><a href="#home"><div class="homeicon"></div></a></li>
+        <li><a href="#" title="Page Title">Page Title</a></li>
+    </ul>
+    <!-- / breadcrumb-->
+    
+    <!-- Content Begin -->
+    <div data-role="content">
+    
+        <!-- Put your content here -->
+        
+    </div>
+    <!-- /content -->
+            
+</div>
+<!-- *********************************************************
+  SAMPLE PAGE END
+********************************************************* -->
+</pre>
+
+<p>And if you want to use a link a dynamic document like PHP page outside just use normal external linking like code below;</p>
+<pre class="brush: html"> <a href="outside.html" data-ajax="false">Link Name</a></pre></p>
+<p>You will see <strong>data-ajax="false"</strong> code up. This tag mean while posting this page disable ajax feature and open it on browser.</p>
+<p>For link to phone and email see links code below.</p>
+<pre class="brush: html">
+<a href="mailto:email@somewhere.com" >Email</a>
+<a href="tel:00000000" >Call me!</a>
+<a href="http://maps.google.com" >Open Google Map</a>
+           </pre>
+</section>
+<section id="addhome">
+<h3>Add Home Bubble</h3>
+<hr class="notop">
+<p>The homepage uses a script which creates a "Add to Home" bubble on iPhones and iPads. This reminds people that they can install an icon on their device which will create a web app on their device. To edit the icon used in the bubble open and edit  assets > images > touch</p>
+<pre class="brush: jscript">
+<script src="assets/js/add2home.js" charset="utf-8"></script><!-- Iphone Bubble  --> 	
+</pre>
+<p>To change settings of the bubble open assets > js > add2home.js You can change the animation entering and leaving the page, how long you want the bubble to stay on the page and how long before it shows up again.</p>
+<pre class="brush: jscript">
+options = {
+autostart: true,			// Automatically open the balloon
+returningVisitor: false,	// Show the balloon to returning visitors only (setting this to true is HIGHLY RECCOMENDED)
+animationIn: 'drop',		// drop || bubble || fade
+animationOut: 'fade',		// drop || bubble || fade
+startDelay: 2000,			// 2 seconds from page load before the balloon appears
+lifespan: 15000,			// 15 seconds before it is automatically destroyed
+bottomOffset: 14,			// Distance of the balloon from bottom
+expire: 0,					// Minutes to wait before showing the popup again (0 = always displayed)
+message: '',				// Customize your message or force a language ('' = automatic)
+touchIcon: false,			// Display the touch icon
+arrow: true,				// Display the balloon arrow
+hookOnLoad: true,			// Should we hook to onload event? (really advanced usage)
+iterations: 100				// Internal/debug use
+</pre>
+</section>
+
+<section id="splashscreen">
+<h3>Splash Screen</h3><hr class="notop">
+<p> You will find splash screen images on<strong> assets &gt;</strong> <strong>images > startup</strong> folder. You have to change with your own logo all off this images. The splash screen script is optimized for automatically detect your new splash screen. But if you want to customize it you can find it on <strong>assets &gt; js &gt; helper.js</strong> file.</p>
+</section>
+
+<section id="twitter">
+<h3>Twitter Plugin</h3><hr class="notop">
+<p> You have to change twitter user name on <strong>assets > js > custom.js</strong> line 84-87 you have to change code below to your username;(change webbudesign to your username)</p>
+<pre class="brush: js">
+...
+// Set twitter username, number of tweets & id/class to append tweets
+	user: 'webbudesign', // Your Twitter Username
+	numTweets: 5, // Number of tweets
+	appendTo: '#jstwitter',
+...
+</pre>
+</section>
+
+<section id="integrate">
+	<h3>Integrate with Site</h3>
+	<hr class="notop">
+<h4>
+  HTML Site</h4>
+<p>If you already have a HTML web site or ASP, PHP etc.. you can easily integrate with your exiting web site. Just use our Mobile Detect JS ( code is on left menu ) and put it on your index.html or default.asp or index.php file's head section like i tell on Mobile Detect Code. And create a folder called mobile on your root directory. Copy all files from theme zipped document to this folder. And configure file and folder names on mobile detect JS.</p>
+<p>That is it you have done!</p>
+
+<h4>
+  Wordpress Site</h4>
+<p>If you already have a Wordpress web site you can easily integrate with your exiting web site. Just use our Mobile Detect JS ( code is on left menu ) and put it on your default wordpress's template header.php file's head section like i tell on Mobile Detect Code. And create a folder called mobile on your template's root directory. Copy all files from theme zipped document to this folder. And configure file and folder names on mobile detect JS.</p>
+<p>That is it you have done!</p>
+</section>
+
+
+<section id="mdetect">
+	<h3>Mobile Detect</h3><hr class="notop">
+    <p>If you want to detect mobile and tablet devices on your website. You can use code below.</p>
+    <p>Put your heading section.</p>
+<pre class="brush: jscript">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+function mobile_detect(mobile,tablet,mobile_redirect,tablet_redirect,debug) {
+	var ismobile = (/iphone|ipod|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase()));
+	var istablet = (/ipad|android 3|sch-i800|playbook|tablet|kindle|gt-p1000|sgh-t849|shw-m180s|a510|a511|a100|dell streak|silk/i.test(navigator.userAgent.toLowerCase()));
+
+	if (debug == true) {
+		alert(navigator.userAgent);
+	}
+
+	if (ismobile && mobile==true) {
+		if (debug == true) {
+			alert("Mobile Browser");
+		}
+		window.location = mobile_redirect;
+	} else if (istablet && tablet==true) {
+		if (debug == true) {
+			alert("Tablet Browser");
+		}
+		window.location = tablet_redirect;
+	}
+}
+</script>
+</pre>
+<p>And you can redirect different pages if you want. Please don't forget to change "mobile.html" and "tablet.html".</p>
+<p>Put your heading section.</p>
+<pre class="brush: jscript">
+<script>
+$(document).ready(function(){
+	mobile_detect(true,true,"mobile.html","tablet.html",false);
+});
+</script>
+</pre>
+</section>
+
+<section id="changelog">
+	<h3>Integrate your site</h3><hr class="notop">
+<h4>
+  Version 1.1 (11/01/2013)</h4>
+<pre class="brush: plain">
+TIGER Updated - Iphone 5 splash screens.</pre>
+<p>&nbsp;	</p>
+</section>
+
+
+<section id="source_credits">
+	<h3>Source & Credits</h3><hr class="notop">
+<p>	Thanks so much to</p>
+<ul>	<li>		<a href="http://jquery.com/" target="_blank">jQuery</a></li>
+  <li><a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a></li>
+	<li><a href="http://www.woothemes.com/flexslider/" target="_blank">jQuery FlexSlider</a></li>
+	<li><a href="http://www.google.com/webfonts/" target="_blank">Google Web Fonts</a></li>
+	<li><a href="http://www.photoswipe.com" target="_blank">PhotoSwipe</a></li>
+	<li><a href="http://glyphish.com/">Glyphish (Pro Licence Icons)</a></li>
+</ul>
+<p>&nbsp;	</p>
+</section>
+
+</div>
+</body>
+</html>
